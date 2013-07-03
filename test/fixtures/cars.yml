@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  make: MyString
+  model_name: MyString
+  color: MyString
+  year: 1
+  doors: 1
+  descriptionimage_url: MyString
+
+two:
+  make: MyString
+  model_name: MyString
+  color: MyString
+  year: 1
+  doors: 1
+  descriptionimage_url: MyString

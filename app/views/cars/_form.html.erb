@@ -1,0 +1,35 @@
+<%= form_for(@car) do |f| %>
+
+  <div class="field">
+    <%= f.label :make %><br />
+    <%= f.text_field :make %>
+  </div>
+   <div class="field">
+    <%= f.label :model_name %><br />
+    <%= f.text_field :model_name %>
+  </div>
+   <div class="field">
+    <%= f.label :color %><br />
+    <%= f.text_field :color %>
+  </div>
+   <div class="field">
+    <%= f.label :year %><br />
+    <%= f.text_field :year %>
+  </div>
+   <div class="field">
+    <%= f.label :doors %><br />
+    <%= f.text_field :doors %>
+  </div>
+   <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+   <div class="field">
+    <%= f.label :image_url %><br />
+    <%= f.text_field :image_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
