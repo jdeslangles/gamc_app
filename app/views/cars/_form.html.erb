@@ -28,6 +28,14 @@
     <%= f.label :image_url %><br />
     <%= f.text_field :image_url %>
   </div>
+   <div class="field">
+    <%= f.label :body_type %><br />
+    <%= select("car", "body_type_id", BodyType.all.collect {|b| [ b.description, b.id ] }, { include_blank: true }) %>
+  </div>
+  <div class="field">
+    <%= f.label :engine_type %><br />
+    <%= select("car", "engine_type_id", EngineType.all.collect {|e| [ e.description, e.id ] }, { include_blank: true }) %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

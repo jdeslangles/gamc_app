@@ -18,6 +18,12 @@
     <th>Doors</th>
     <td><%= @car.doors %></td>
   <tr>
+    <th>Body Type</th>
+    <td><%= @car.body_type.description if @car.body_type %></td>
+<tr>
+    <th>Engine</th>
+    <td><%= @car.engine_type.description if @car.engine_type %></td>
+  <tr>
     <th>Description</th>
     <td><%= @car.description %></td>
 </table>
