@@ -1,27 +1,26 @@
-<h1>cars#show</h1>
-<p>Find me in app/views/cars/show.html.erb</p>
-
+<h2>Car details</h2>
+<br>
+<%=image_tag @car.image_url, size: '600x450' %>
 <table>
-<tr>
-  <th>Make</th>
-  <td><%= @car.make %></td>
-<tr>
-  <th>Model name</th>
-  <td><%= @car.model_name %></td>
-<tr>
-  <th>Color</th>
-  <td><%= @car.color %></td>
-<tr>
-  <th>Year</th>
-  <td><%= @car.year %></td>
-<tr>
-  <th>Doors</th>
-  <td><%= @car.doors %></td>
-<tr>
-  <th>Description</th>
-  <td><%= @car.description %></td>
-<tr>
-  <th>Image</th>
-  <td><%= @car.image_url %></td>
+  <tr>
+    <th>Make</th>
+    <td><%= @car.make %></td>
+  <tr>
+    <th>Model</th>
+    <td><%= @car.model_name %></td>
+  <tr>
+    <th>Color</th>
+    <td><%= @car.color %></td>
+  <tr>
+    <th>Year</th>
+    <td><%= @car.year %></td>
+  <tr>
+    <th>Doors</th>
+    <td><%= @car.doors %></td>
+  <tr>
+    <th>Description</th>
+    <td><%= @car.description %></td>
 </table>
-<br><br>
+<br>
+ <%= link_to 'Edit', edit_car_path(@car.id)%>
+  <%= link_to 'Destroy', car_path(@car.id), method: :delete, data: { confirm: 'Are you sure?' }%>

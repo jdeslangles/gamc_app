@@ -7,7 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1>GA Car DB ---> Manage your car DB like a professional on a tight budget!</h1>
+  <div class="header">
+  <header>
+    <h1>GA Car DB v1.0</h1>
+    <p>The Unofficial GA Car DB Management App</p>
+  </header>
+    <nav>
+      <ul>
+        <li><%= link_to("Cars in GA's DB", cars_path) %></li>
+        <li><%= link_to('Add new car', new_car_path)  %></li>
+      </ul>
+    </nav>
+  </div>
+  <hr>
 
 <%= yield %>
 

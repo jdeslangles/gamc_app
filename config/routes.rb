@@ -8,7 +8,7 @@ GamcApp::Application.routes.draw do
   # get "cars/create"
   # get "cars/new"
 
-resources :Cars
+resources :cars
 
 root to: 'cars#index'
 
